@@ -177,12 +177,12 @@ root
 +-------+---------------+----------+
 '''
 
+#  .show(10, False))
 # (emp_df2
 #  .groupBy("dept", "gender")
 #  .max("salary")
 #  .select("dept", "gender", col("max(salary)")
 #  .alias("max_salary"))
-#  .show(10, False))
 '''
 +-------+------+----------+
 |dept   |gender|max_salary|
@@ -197,7 +197,7 @@ root
 '''
 
 
-emp_df2.groupBy(col("dept")).agg(sum("salary").alias("agg_sum_salary"), max("salary").alias("agg_max_salary")).show()
+#emp_df2.groupBy(col("dept")).agg(sum("salary").alias("agg_sum_salary"), max("salary").alias("agg_max_salary")).show()
 '''
 +-------+--------------+--------------+
 |   dept|agg_sum_salary|agg_max_salary|
