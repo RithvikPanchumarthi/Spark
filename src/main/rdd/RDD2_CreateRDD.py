@@ -51,8 +51,28 @@ print("Empty RDD: ", rdd_empty.collect())
     Output:
             Empty RDD:  []
 '''
+#Parallelizing Empty RDD
 
 rdd_empty_list = sc.parallelize([])
 print("Empty RDD List: ", rdd_empty_list.collect())
+
+'''
+    Output:
+            Empty RDD:  []
+'''
+#Getting First Record in RDD
+print("First Record: ", rdd_file.first())
+
+'''
+    Output:
+            First Record:  empid,name,age,dept,salary,gender
+'''
+#Getting Count of Records in RDD
+print("Count File: ", rdd_file.count())
+
+'''
+    Output:
+            Count File:  11
+'''
 
 sc.stop()
