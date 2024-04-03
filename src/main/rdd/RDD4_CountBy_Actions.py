@@ -1,4 +1,4 @@
-from pyspark import SparkContext
+from pyspark import SparkContext #Import SparkContext
 
 sc = SparkContext("local[2]", "Count_Example")
 
